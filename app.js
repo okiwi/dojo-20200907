@@ -5,6 +5,8 @@ const calc = {
             return "IV"
         if (bothNumbers === "IIV") 
             return "V"   
+        if (bothNumbers === "IVI") 
+            return "V"   
         return bothNumbers
     }
 }
