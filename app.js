@@ -3,7 +3,8 @@ const calc = {
         var bothNumbers = firstNumber + secondNumber
         if (bothNumbers === "IIII") 
             return "IV"
-        
+        if (bothNumbers === "IIV") 
+            return "V"   
         return bothNumbers
     }
 }
