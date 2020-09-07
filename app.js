@@ -1,19 +1,25 @@
 const calc = {
     add: (firstNumber, secondNumber) => {
-        var bothNumbers = convert(firstNumber) + convert(secondNumber)
+        var bothNumbers = decompose(firstNumber) + decompose(secondNumber)
         if (bothNumbers === "IIII") 
             return "IV"
-        if (bothNumbers === "IIIII") 
-            return "V"
-        return bothNumbers
+            
+        return compose(bothNumbers)
     }
 }
 
-let convert = (number) => {
-    if  (number === "IV") {
+let decompose = (number) => {
+    if (number === "IV") {
         return "IIII"
     }
+    if (number === "V")
+        return "IIIII"
+
     return number
+}
+
+let compose = (number) => {
+    return number.replace("IIIII", "V")
 }
 
 module.exports = calc

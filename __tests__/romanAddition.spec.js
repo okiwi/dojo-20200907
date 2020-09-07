@@ -71,5 +71,21 @@ describe("Roman Addition", () => {
       // assert, or expect in this frame
       expect(result).toEqual("V");
     });
+
+    test("add II and V", () => {
+      // arrange - the calc import does it
+      // act
+      let result = calc.add("II", "V")
+      // assert, or expect in this frame
+      expect(result).toEqual("VII");
+    });
+
+    test("add III and V", () => {
+      // arrange - the calc import does it
+      // act
+      let result = calc.add("III", "V")
+      // assert, or expect in this frame
+      expect(result).toEqual("VIII");
+    });
 });
 
