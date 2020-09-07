@@ -1,7 +1,10 @@
 const calc = {
     add: (firstNumber, secondNumber) => {
-        if (firstNumber + secondNumber === "IIII") return "IV"
-        return firstNumber + secondNumber
+        var bothNumbers = firstNumber + secondNumber
+        if (bothNumbers === "IIII") 
+            return "IV"
+        
+        return bothNumbers
     }
 }
 module.exports = calc
